@@ -72,7 +72,6 @@ back-end/
 │   ├── main.py
 │   └── inventory_consumer.py
 │
-├── docker-compose.yml
 └── README.md
 ```
 
@@ -201,7 +200,7 @@ This project is ideal for learning:
 - How to structure FastAPI beyond CRUD
 
 ---
-##🚧 Possible Improvements
+## 🚧 Possible Improvements
 
 - Add database persistence
 
