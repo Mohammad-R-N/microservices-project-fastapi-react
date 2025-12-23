@@ -21,7 +21,7 @@ def create_order(product_order: ProductOrder, background: BackgroundTasks):
         status="pending",
     )
     order.save()
-    background.add_task(order_services.compelete_order, order)
+    background.add_task(order_services.complete_order, order)
     return order
 
 
