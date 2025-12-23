@@ -1,4 +1,5 @@
 from models.orders import Order
+import time
 
 
 def order_format(pk: str):
@@ -12,3 +13,9 @@ def order_format(pk: str):
         "quantity": order.quantity,
         "status": order.status,
     }
+
+
+def compelete_order(order: Order):
+    time.sleep(3)
+    order.status = "Complete"
+    order.save()
