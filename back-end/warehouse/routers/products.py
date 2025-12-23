@@ -10,14 +10,14 @@ def create_product(product: Product):
     return product.save()
 
 
-@router.get("/{pk}")
-def get_product(pk: str):
-    return Product.get(pk)
-
-
 @router.get("/all")
 def get_all_products():
     return [product_services.product_format(pk) for pk in Product.all_pks()]
+
+
+@router.get("/{pk}")
+def get_product(pk: str):
+    return Product.get(pk)
 
 
 @router.delete("/{pk}")
